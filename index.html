@@ -1,22 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjetas</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        
+      <img id="disney" src="img/disney.png" alt="cars" />
+      <h1>Aventuras Disney Plus</h1>
+      <nav>
+        <ul>
+          <li>Sección 1</li>
+          <li>Sección 2</li>
+          <li>Sección 3</li>
+        </ul>
+      </nav>
+
+      <button>Ingresar</button>
+      <button>Registrar</button>
+
+      <input type="text" placeholder="Buscar" />
+      <button>Buscar</button>
     </header>
 
     <main>
+      <!-- section -->
+      <section>
+        <img id="avengers" src="img/avengers.png" alt="iron man" />
+        <p>
+          Los Avengers, ¿una nueva era de Marvel?, Superheroes y villanos a la
+          vez. Después de que S.H.I.E.L.D. colapsara, Industrias Stark remodeló
+          la Torre Stark y la convirtió en la Torre de los Vengadores, y el
+          equipo se reunió para terminar la lucha contra HYDRA, que era dirigida
+          por Wolfgang von Strucker. Una vez terminada la amenaza, Anthony Stark
+          y Bruce Banner crearon a Ultrón con la intención de que este proteja
+          el mundo por ellos, sin embargo, Ultrón les declaró la guerra e
+          intentó extinguir a la humanidad, forzando a los Vengadores a crear a
+          Visión, quien eliminó a Ultrón. Más adelante, el equipo ganó nuevos
+          reclutas y se trasladó al Centro de los Nuevos Vengadores.
+        </p>
+        <a href="https://www.marvel.com/" target="_blank"> Conoce más </a>
+      </section>
 
+      <div>
+        <img id="cars" src="img/cars_main.png" alt="iron man" />
+        <p>
+          Cars 3, ¿la última film del gran corredor automotriz? Prometedora
+          figura del automovilismo, que está a punto de conseguir su primera
+          Copa Pistón, aun siendo un novato. Sin embargo, el día que se dirige
+          hacia el circuito, tiene un accidente y acaba perdido en un pueblo
+          llamado Radiador Springs, medio abandonado en el que se ve obligado a
+          quedarse. Allí descubrirá muchos valores que parecía no tener y su
+          vida dará un vuelco absoluto. Se dará cuenta de que todo lo que el
+          parecía tener no tiene importancia en ese lugar y que lo que realmente
+          importa no es el éxito o poder, sino el esfuerzo por lograrlo y el
+          compañerismo.
+        </p>
+        <a href="https://www.pixar.com/" target="_blank">Conoce mas</a>
+      </div>
+
+      <!-- <video controls autoplay>
+        <source src="video/video_disney.mp4" type="video/mp4" />
+      </video> -->
+
+      <!-- quitar ?v= -->
+      <iframe
+        width="1280"
+        height="737"
+        src="https://www.youtube.com/embed/j3XFdgD311E?autoplay=1"
+        title="Coming Soon in 2025"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </main>
 
     <footer>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <a href="">
+            <img src="" alt="">
+        </a>
+<!-- action: mandar la información (server) -->
+        <form action="" method="post">
+            <label for="nombre">Introduce tu nombre</label>
+            <input type="text" id="nombre" placeholder="Juan Pérez García" name="nombre">
+            <label for="telefono">Introduce tu teléfono</label>
+            <input type="number" placeholder=" 553562 3495 " id="telefono" name="telefono">
+            <label for="correo">Introduce tu correo electrónico</label>
+            <input type="email" id="correo" placeholder="correo@correo.com" name="correo">
+            <label for="genero">Seleccione su género</label>
+            <input type="radio" id="femenino" value="femenino" name="genero">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" value="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+            <h3>Seleccione sus colores favoritos:</h3>
+            <label for="rojo">Rojo</label>
+            <input type="checkbox" id="rojo" name="color">
 
+            <label for="azul">Azul</label>
+            <input type="checkbox" id="azul" name="color">
+
+            <label for="verde">verde</label>
+            <input type="checkbox" id="verde" name="color">
+
+            <h3>Selecciona el día</h3>
+            <select name="dia" id="date">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+            </select>
+
+            <button>Enviar</button>
+        </form>
     </footer>
-</body>
+  </body>
 </html>
+<!-- control K | C 
+ 
+name con lo que se envia el formulario al servidor
+-->
