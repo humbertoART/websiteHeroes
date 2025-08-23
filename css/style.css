@@ -197,3 +197,27 @@ padding: espacio entre el elemento y su borde
     font-weight: 400;
     font-style: normal;
 }
+
+#nombre {
+    margin-bottom: 10px; /*espacio entre elementos*/
+}
+
+#telefono {
+    margin-bottom: 10px;
+}
+
+#correo {
+    margin-bottom: 10px;
+}
+
+#nobinario {
+    margin-bottom: 10px;
+}
+
+#dia {
+    margin-top: 10px;
+}
+
+#enviar {
+    margin-top: 10px;
+}
