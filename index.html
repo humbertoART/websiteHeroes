@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjetas</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  
   <body>
     <header>
-      <img id="disney" src="img/disney.png" alt="cars" />
-      <h1>Aventuras Disney Plus</h1>
+      <img id="disney" src="img/disney.png" alt="Logo de Disney" />
+      <h1 id="titulo">Aventuras Disney Plus</h1>
       <nav>
-        <ul>
+        <ul id="menu">
           <li>Sección 1</li>
           <li>Sección 2</li>
           <li>Sección 3</li>
         </ul>
       </nav>
 
-      <button>Ingresar</button>
-      <button>Registrar</button>
+      <button id="inicio" class="btn">Ingresar</button>
+      <button id="registro" class="btn">Registrar</button>
 
-      <input type="text" placeholder="Buscar" />
-      <button>Buscar</button>
+      <input id="barra" type="text" placeholder="Buscar" />
+      <button id="buscar" class="btn">Buscar</button>
     </header>
 
     <main>
       <!-- section -->
-      <section>
+      <section id="card01">
         <img id="avengers" src="img/avengers.png" alt="iron man" />
-        <p>
+        <p id="paragraph01">
           Los Avengers, ¿una nueva era de Marvel?, Superheroes y villanos a la
           vez. Después de que S.H.I.E.L.D. colapsara, Industrias Stark remodeló
           la Torre Stark y la convirtió en la Torre de los Vengadores, y el
@@ -41,12 +44,12 @@
           Visión, quien eliminó a Ultrón. Más adelante, el equipo ganó nuevos
           reclutas y se trasladó al Centro de los Nuevos Vengadores.
         </p>
-        <a href="https://www.marvel.com/" target="_blank"> Conoce más </a>
+        <a id="enlace01" href="https://www.marvel.com/" target="_blank"> Conoce más </a>
       </section>
 
-      <div>
+      <div id="card02">
         <img id="cars" src="img/cars_main.png" alt="iron man" />
-        <p>
+        <p id="paragraph02">
           Cars 3, ¿la última film del gran corredor automotriz? Prometedora
           figura del automovilismo, que está a punto de conseguir su primera
           Copa Pistón, aun siendo un novato. Sin embargo, el día que se dirige
@@ -58,7 +61,7 @@
           importa no es el éxito o poder, sino el esfuerzo por lograrlo y el
           compañerismo.
         </p>
-        <a href="https://www.pixar.com/" target="_blank">Conoce mas</a>
+        <a id="enlace02" href="https://www.pixar.com/" target="_blank">Conoce mas</a>
       </div>
 
       <!-- <video controls autoplay>
@@ -89,33 +92,38 @@
         <img src="" alt="" />
       </a>
       <!-- action: mandar la información (server) -->
-      <form action="" method="post">
-        <label for="nombre">Introduce tu nombre</label>
+      <form id="formulario" action="" method="post">
+        <fieldset>
+          <legend>Datos de contacto</legend>
+        <label for="nombre">Introduce tu nombre</label> <br/>
         <input
           type="text"
           id="nombre"
           placeholder="Juan Pérez García"
           name="nombre"
-        />
-        <label for="telefono">Introduce tu teléfono</label>
+        /> <br/>
+        <label for="telefono">Introduce tu teléfono</label> <br/>
         <input
           type="number"
           placeholder=" 553562 3495 "
           id="telefono"
           name="telefono"
-        />
-        <label for="correo">Introduce tu correo electrónico</label>
+        /> <br/>
+        <label for="correo">Introduce tu correo electrónico</label> <br/>
         <input
           type="email"
           id="correo"
           placeholder="correo@correo.com"
           name="correo"
-        />
-        <label for="genero">Seleccione su género</label>
+        /> <br/>
+        <label for="genero">Seleccione su género</label> <br/>
         <input type="radio" id="femenino" value="femenino" name="genero" />
-        <label for="femenino">Femenino</label>
+        <label for="femenino">Femenino</label> <br>
         <input type="radio" id="masculino" value="masculino" name="genero" />
-        <label for="masculino">Masculino</label>
+        <label for="masculino">Masculino</label> <br>
+        <input type="radio" id="nobinario" value="nobinario" name="genero" />
+        <label for="nobinario">Prefiero no decir</label>
+
         <h3>Seleccione sus colores favoritos:</h3>
         <label for="rojo">Rojo</label>
         <input type="checkbox" id="rojo" name="color" />
@@ -134,8 +142,9 @@
           <option value="jueves">Jueves</option>
           <option value="viernes">Viernes</option>
         </select>
-        <input type="date">
+        <input type="date" /> <br>
         <button>Enviar</button>
+        </fieldset>
       </form>
     </footer>
   </body>

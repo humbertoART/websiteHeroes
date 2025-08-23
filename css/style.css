@@ -1,6 +1,4 @@
-/* #disney {
-    width: 900px;
-}
+/* 
 
 #avengers {
     width: 30%;
@@ -9,3 +7,193 @@
 #cars {
     width: 30%;
 } */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--- HEADER ---*/
+
+#disney {
+    position: relative;
+    width: 300px;
+    left: 90px;
+    top: 80px;
+}
+
+#titulo {
+    font-family: "Permanent Marker", cursive;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    left: 30%;
+}
+
+#menu {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    left: 81%;
+    bottom: 130px; /*empujar hacia arriba*/
+    font-size: 24px;
+    list-style: none;
+}
+
+.btn {
+    /* font-family: "Bungee Spice", sans-serif; */
+    font-family: "Rubik Vinyl", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: #30303b;
+    color: #fff;
+    padding: 3px;
+    position: relative;
+    left: 80%;
+    bottom: 280px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#barra {
+    position: relative;
+    left: 30%;
+    bottom: 250px;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center; /*centrar texto esrito en input text*/
+}
+
+#buscar {
+    /* position: relative; */
+    left: 30%;
+    bottom: 250px; /*empujar hacia arriba*/
+}
+
+
+/*
+
+#inicio {
+    left: 80%;
+    bottom: 250px;
+}
+
+#registro {
+    left: 80%;o es right o  es left
+    bottom: 250px; top o bottom
+}
+
+padding: espacio entre el elemento y su borde
+
+*/
+
+/*------------------ MAIN ------------------*/
+/*--- CARD 01 ---*/
+#card01 {
+    background-color: #30303b;
+    width: 500px;
+    height: 889px;
+    background-image: url("../img/bg_card01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 5px rgb(51, 51, 53) solid;
+    padding: 50px;
+    position: relative;
+    left: 14%;
+    bottom: 100px;
+}
+
+#avengers {
+    /* position: relative; */
+    bottom: 850px;
+    left: 160px;
+    width: 260px;
+    position: absolute;
+
+}
+
+#paragraph01 {
+    width: 400px;
+    position: absolute; /*borde de la pantalla*/
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    top: 150px;
+    left: 80px;
+    text-align: justify;
+}
+
+#enlace01 {
+    position: absolute; /*su referencia sea el padre, en este caso, card01*/
+    top: 950px;
+    left: 200px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*--- CARD 02 ---*/
+#card02 {
+    background-color: #30303b;
+    width: 500px;
+    height: 895px;
+    background-image: url("../img/bg_card01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 5px rgb(51, 51, 53) solid;
+    padding: 50px;
+    position: relative;
+    left: 50%;
+    bottom: 1100px;
+}
+
+#cars {
+    bottom: 798px;
+    left: 160px;
+    width: 260px;
+    position: absolute;
+}
+
+#paragraph02 {
+    width: 400px;
+    position: absolute; /*borde de la pantalla*/
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    top: 200px;
+    left: 80px;
+    text-align: justify;
+}
+
+#enlace02 {
+    position: absolute; /*su referencia sea el padre, en este caso, card01*/
+    top: 960px;
+    left: 200px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*--------- FOOTER -------------*/
+/* FORM */
+#formulario {
+    width: 30%;
+    font-family: "Permanent Marker", cursive;
+    /* font-size: 10px; */
+    font-weight: 400;
+    font-style: normal;
+}
